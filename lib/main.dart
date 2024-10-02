@@ -5,7 +5,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_scene/camera.dart';
 import 'package:flutter_scene/node.dart';
 import 'package:flutter_scene/scene.dart';

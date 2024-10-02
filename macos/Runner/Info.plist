@@ -27,8 +27,8 @@
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
-	<!-- Flutter Scene requires Impeller to render via flutter_gpu -->
 	<string>NSApplication</string>
+	<!-- Flutter Scene requires Impeller to render via flutter_gpu -->
 	<key>FLTEnableImpeller</key>
 	<true />
 </dict>
