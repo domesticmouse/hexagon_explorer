@@ -1,0 +1,28 @@
+name: hexagon_explorer
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0-309.0.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_scene: ^0.4.0-0
+  vector_math: ^2.1.4
+  flutter_scene_importer: ^0.1.2-3
+  native_assets_cli: ^0.7.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - build/models/
+
