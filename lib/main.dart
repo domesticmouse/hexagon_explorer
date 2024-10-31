@@ -57,26 +57,31 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Hexagon Explorer',
-      home: FutureBuilder(
-        future: widget.sceneReady,
-        builder: (context, snapshot) {
-          if (snapshot.hasError) {
-            return Center(child: Text('Error: ${snapshot.error}'));
-          }
-          if (snapshot.connectionState != ConnectionState.done) {
-            return Center(child: CircularProgressIndicator());
-          }
-          return CustomPaint(
-            painter: ScenePainter(
-              scene: scene,
-              camera: PerspectiveCamera(
-                position: Vector3(
-                    sin(elapsedSeconds) * 3, 2, cos(elapsedSeconds) * 3),
-                target: Vector3(0, 0, 0),
-              ),
-            ),
-          );
-        },
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: SizedBox.expand(
+          child: FutureBuilder(
+            future: widget.sceneReady,
+            builder: (context, snapshot) {
+              if (snapshot.hasError) {
+                return Center(child: Text('Error: ${snapshot.error}'));
+              }
+              if (snapshot.connectionState != ConnectionState.done) {
+                return Center(child: CircularProgressIndicator());
+              }
+              return CustomPaint(
+                painter: ScenePainter(
+                  scene: scene,
+                  camera: PerspectiveCamera(
+                    position: Vector3(
+                        sin(elapsedSeconds) * 3, 2, cos(elapsedSeconds) * 3),
+                    target: Vector3(0, 0, 0),
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
       ),
     );
   }
