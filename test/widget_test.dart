@@ -9,20 +9,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:hexagon_explorer/main.dart';
+import 'package:flutter_scene/scene.dart';
 
 void main() {
   testWidgets(
     'Hexagon Explorer smoke test',
     (WidgetTester tester) async {
+      final sceneReady = Scene.initializeStaticResources();
       // Build our app and trigger a frame.
       await tester.pumpWidget(
-        const MaterialApp(
+        MaterialApp(
           title: 'Hexagon Explorer test',
-          home: MyApp(),
+          home: MainApp(sceneReady: sceneReady),
         ),
       );
     },
-    // TODO(domesticmouse): Remove skip once Hexagon assets are usable with flutter_scene.
-    skip: true,
   );
 }
