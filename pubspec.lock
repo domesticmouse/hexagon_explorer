@@ -54,14 +54,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.0"
-  cli_config:
-    dependency: transitive
-    description:
-      name: cli_config
-      sha256: ac20a183a07002b700f0c25e61b7ee46b23c309d76ab7b7640a028f18e4d99ec
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.0"
   clock:
     dependency: transitive
     description:
@@ -140,10 +132,10 @@ packages:
     dependency: transitive
     description:
       name: flutter_gpu_shaders
-      sha256: c51b0522cdc40cf3dd7ff1547497456798c7da4f4f6077cbddc2afb5575f31ea
+      sha256: f8a74a89794c6a4e85dae054043830f62240a2b4ed9773061198aa8c0ad151b1
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.4"
+    version: "0.2.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -156,18 +148,18 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_scene
-      sha256: "7a3887233b7e735274d832b9b39dce5e486100d163f171320294de2dfcd6e6d2"
+      sha256: "24dde4a00f7f356b332d11ee3ca5dd280a6c962c073fb095edd580965ebd216b"
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0-0"
+    version: "0.7.0-0"
   flutter_scene_importer:
     dependency: "direct main"
     description:
       name: flutter_scene_importer
-      sha256: e824e58939305cb39be33d0dce5261b1632530be406cddfd326f280e1492bdd1
+      sha256: "4af400adecbf1b2600e07e6a8eab61a3b71c358b1979e791841355184020f3e6"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.0-0"
+    version: "0.7.0-0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -305,10 +297,10 @@ packages:
     dependency: "direct main"
     description:
       name: native_assets_cli
-      sha256: db902509468ec2a6c6d11fa9ce02805ede280e8dbfb5f0014ef3de8483cadfce
+      sha256: "9573f442a27000af0597639bf8a3db24f23cf6cbab7469ce3b9c80f585075e6b"
       url: "https://pub.dev"
     source: hosted
-    version: "0.8.0"
+    version: "0.9.0"
   node_preamble:
     dependency: transitive
     description:
@@ -555,5 +547,5 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.7.0-0 <4.0.0"
+  dart: ">=3.7.0-75.0.dev <4.0.0"
   flutter: ">=3.18.0-18.0.pre.54"
