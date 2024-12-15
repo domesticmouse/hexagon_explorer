@@ -12,10 +12,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: main
+      - uses: kuhnroyal/flutter-fvm-config-action/setup@v3
       - run: dart --version
       - run: flutter --version
       - run: flutter pub get
