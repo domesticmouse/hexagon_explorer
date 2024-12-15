@@ -12,17 +12,14 @@ import 'package:hexagon_explorer/main.dart';
 import 'package:flutter_scene/scene.dart';
 
 void main() {
-  testWidgets(
-    'Hexagon Explorer smoke test',
-    (WidgetTester tester) async {
-      final sceneReady = Scene.initializeStaticResources();
-      // Build our app and trigger a frame.
-      await tester.pumpWidget(
-        MaterialApp(
-          title: 'Hexagon Explorer test',
-          home: MainApp(sceneReady: sceneReady),
-        ),
-      );
-    },
-  );
+  testWidgets('Hexagon Explorer smoke test', (WidgetTester tester) async {
+    final sceneReady = Scene.initializeStaticResources();
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(
+      MaterialApp(
+        title: 'Hexagon Explorer test',
+        home: MainApp(sceneReady: sceneReady),
+      ),
+    );
+  });
 }
